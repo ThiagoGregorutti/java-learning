@@ -7,8 +7,5 @@ public class Main {
 
         System.out.println("My name is " + MyName + ", I'm " + MyAge + " years old " + " and " + MyHeight + " meters tall.");
 
-
-
-
     }
 }
