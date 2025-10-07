@@ -3,23 +3,11 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         // Primitive variables
-        ArrayList<String> nomes = new ArrayList<>();
-        nomes.add("Johan");
-        nomes.add("Liebert");
-        nomes.add("Lelouch");
-        nomes.add("Lamperouge");
-        nomes.add("Britannia");
+        int[] numbers = {10, 20, 30, 40, 50, 60, 70, 80};
 
-        /* nomes.remove("johan");
-
-        System.out.println(nomes.get(0));
-         */
-
-        for (int i = 0; i < nomes.size(); i++){
-            System.out.println(nomes.get(i));
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
         }
-
 
     }
 }
-
