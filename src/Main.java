@@ -9,9 +9,6 @@ public class Main {
         if (hour < 12) {
             System.out.println("Good morning!");
         }
-        else if (hour == 12) {
-            System.out.println("Good noon!");
-        }
         else if (hour < 18) {
             System.out.println("Good afternoon!");
         }
