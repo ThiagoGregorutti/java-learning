@@ -10,9 +10,15 @@ public class Main {
         nomes.add("Lamperouge");
         nomes.add("Britannia");
 
-        nomes.remove("johan");
+        /* nomes.remove("johan");
 
         System.out.println(nomes.get(0));
+         */
+
+        for (int i = 0; i < nomes.size(); i++){
+            System.out.println(nomes.get(i));
+        }
+
 
     }
 }
