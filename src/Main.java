@@ -1,31 +1,13 @@
-import java.util.ArrayList;
+import java.util.ArrayList; // ✅ Add this line at the top
 
 public class Main {
     public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>();
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
 
-        boolean messiScores = true;
-        int goalCount = 0;
-
-        while(messiScores) {
-            goalCount++;
-            System.out.println("Messi goals count: " + goalCount);
-            if (goalCount == 3) {
-                messiScores = false;
-            }
-        }
-
+        System.out.println(colors.get(0));
+        System.out.println(colors.get(colors.size() - 1));
     }
 }
-
-/* int[] numbers = {10, 20, 30};
-
-        for (int i = 0; i < numbers.length; i++) {
-        System.out.println(numbers[i]);
-
-########################################################
-
-            for (int i = 0; i <= 5; i++) {
-        System.out.println(i);
-
-
- */
