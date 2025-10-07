@@ -5,7 +5,7 @@ public class Main {
         boolean raining = true;
         int hour = 12;
 
-        // Hour of the day
+
         if (hour < 12) {
             System.out.println("Good morning!");
         }
@@ -19,7 +19,7 @@ public class Main {
             System.out.println("Good evening!");
         }
 
-        // Temperature conditions
+
         if (temperature < 0) {
             System.out.println("It's freezing.");
         } else if (temperature < 15) {
@@ -30,7 +30,7 @@ public class Main {
             System.out.println("It's hot.");
         }
 
-        // Raining condition
+
         if (raining) {
             System.out.println("Don't forget your umbrella.");
         }
