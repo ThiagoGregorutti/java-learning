@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        // Create two Dog objects
+        // Create two objects
         Player player1 = new Player();
         Player player2 = new Player();
 
@@ -11,7 +11,6 @@ public class Main {
         player2.name = "Dionysus";
         player2.score = 666;
 
-        // Make them bark
         player1.showScore();
         player2.showScore();
     }
