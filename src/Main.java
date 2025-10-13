@@ -1,27 +1,27 @@
 public class Main {
     public static void main(String[] args) {
-        // Create two objects
-        God god1 = new God();
-        God god2 = new God();
 
-        // Set their attributes
-        god1.name = "Zeus";
-        god1.lives = 2;
+        Book book1 = new Book();
+        Book book2 = new Book();
 
-        god2.name = "Athenas";
-        god2.lives = 7;
+        book1.title = "The Odyssey";
+        book1.author = "Homer";
 
-        god1.heck();
-        god2.heck();
+        book2.title = "The Joyous Science";
+        book2.author = "Nietzsche";
+
+        book1.read();
+        book2.read();
+
 
     }
 }
 
-class God {
-    String name;
-    int lives;
+class Book {
+    String title;
+    String author;
 
-    void heck() {
-        System.out.println(name + " says: Heck! I have " + lives + " left.");
+    void read() {
+        System.out.println("You are currently reading: " + title + " by " + author + ".");
     }
 }
