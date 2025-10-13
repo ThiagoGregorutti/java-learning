@@ -1,27 +1,27 @@
 public class Main {
     public static void main(String[] args) {
         // Create two objects
-        Player player1 = new Player();
-        Player player2 = new Player();
+        God god1 = new God();
+        God god2 = new God();
 
         // Set their attributes
-        player1.name = "Apollo";
-        player1.score = 888;
+        god1.name = "Zeus";
+        god1.lives = 2;
 
-        player2.name = "Dionysus";
-        player2.score = 666;
+        god2.name = "Athenas";
+        god2.lives = 7;
 
-        player1.showScore();
-        player2.showScore();
+        god1.heck();
+        god2.heck();
+
     }
 }
 
-
-class Player {
+class God {
     String name;
-    int score;
+    int lives;
 
-    void showScore() {
-        System.out.println(name + " has a score of " + score);
+    void heck() {
+        System.out.println(name + " says: Heck! I have " + lives + " left.");
     }
 }
