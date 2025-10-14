@@ -5,6 +5,6 @@ public class Book {
     String author;
 
     void read() {
-        System.out.println("You are currently reading " + title + " by " + author + ".");
+        System.out.println(" You are currently reading " + title + " by " + author + ".");
     }
 }
