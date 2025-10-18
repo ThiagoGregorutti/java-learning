@@ -1,7 +1,7 @@
 package folder_example;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Book book1 = new Book();
         book1.title = "The Odyssey";
         book1.author = "Homer";
