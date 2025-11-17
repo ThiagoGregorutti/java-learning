@@ -6,11 +6,11 @@ public class Main {
 
         Random random = new Random();
 
-        boolean number;
+        boolean isHeads;
 
-        number = random.nextBoolean();
+        isHeads = random.nextBoolean();
 
-        if (number){
+        if (isHeads){
             System.out.println("Heads");
         }
         else{
