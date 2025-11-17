@@ -1,21 +1,26 @@
 package folder_example;
-import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
 
-        boolean isHeads;
+        double a;
+        double b;
+        double c;
 
-        isHeads = random.nextBoolean();
+        System.out.print("side A in cm: ");
+        a = scanner.nextDouble();
 
-        if (isHeads){
-            System.out.println("Heads");
-        }
-        else{
-            System.out.println("Tails");
-        }
+        System.out.print("side B in cm: ");
+        b = scanner.nextDouble();
 
+        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+        System.out.print("side C is " + c + "cm");
+
+
+        scanner.close();
     }
 }
