@@ -21,6 +21,7 @@ public class Main {
         System.out.print("side C is " + c + "cm");
 
 
+
         scanner.close();
     }
 }
