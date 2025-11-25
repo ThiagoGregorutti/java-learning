@@ -1,19 +1,33 @@
 package folder_example;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        int id1 = 1;
-        int id2 = 23;
-        int id3 = 456;
-        int id4 = 7890;
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.printf("%04d\n", id1);
-        System.out.printf("%04d\n", id2);
-        System.out.printf("%04d\n", id3);
-        System.out.printf("%04d\n", id4);
+        double principal;
+        double rate;
+        int timesCompounded;
+        int years;
+        double amount;
 
+        System.out.print("Enter the principal amount: ");
+        principal = scanner.nextDouble();
+
+        System.out.print("Enter the interest rate (in %): ");
+        rate = scanner.nextDouble() / 100;
+
+        System.out.print("Enter the number of times compounded per years: ");
+        timesCompounded = scanner.nextInt();
+
+        System.out.print("Enter the number of years: ");
+        years = scanner.nextInt();
+
+        amount = principal * Math.pow(1 + rate / timesCompounded, timesCompounded * years);
+
+        System.out.println("The amount after " + years + " is: $" + amount);
+
+        scanner.close();
     }
 }
