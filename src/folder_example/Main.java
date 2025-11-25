@@ -1,4 +1,5 @@
 package folder_example;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -6,19 +7,20 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double a;
-        double b;
-        double c;
+        String name = "Kaneki";
+        char firstLetter = 'K';
+        int age = 23;
+        double height = 60.5;
+        boolean isEmployed = true;
 
-        System.out.print("side A in cm: ");
-        a = scanner.nextDouble();
+        System.out.printf("Hello %s\n", name);
+        System.out.printf("Your name starts with a %c\n", firstLetter);
+        System.out.printf("You're %d years old\n", age);
+        System.out.printf("You're %f inches tall\n", height);
+        System.out.printf("Employed: %b\n", isEmployed);
 
-        System.out.print("side B in cm: ");
-        b = scanner.nextDouble();
+        System.out.printf("%s is %d years old", name, age);
 
-        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-
-        System.out.print("side C is " + c + "cm");
 
 
 
