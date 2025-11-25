@@ -6,27 +6,25 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double principal;
-        double rate;
-        int timesCompounded;
-        int years;
-        double amount;
+        int age;
+        int height;
 
-        System.out.print("Enter the principal amount: ");
-        principal = scanner.nextDouble();
+        System.out.print("What is your age?");
+        age = scanner.nextInt();
 
-        System.out.print("Enter the interest rate (in %): ");
-        rate = scanner.nextDouble() / 100;
+        System.out.print("What is your height?");
+        height = scanner.nextInt();
 
-        System.out.print("Enter the number of times compounded per years: ");
-        timesCompounded = scanner.nextInt();
-
-        System.out.print("Enter the number of years: ");
-        years = scanner.nextInt();
-
-        amount = principal * Math.pow(1 + rate / timesCompounded, timesCompounded * years);
-
-        System.out.println("The amount after " + years + " is: $" + amount);
+        if(age >= 18) {
+            if(height >= 160) {
+                System.out.print("You can ride!");
+            }
+            else {
+                System.out.print("You're old enough, but too short.");
+            }
+        } else {
+            System.out.print("You're too young.");
+        }
 
         scanner.close();
     }
